@@ -18,6 +18,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # Optional (future CI/CD use)
-assets/input.css
 package-lock.json
 package.json
