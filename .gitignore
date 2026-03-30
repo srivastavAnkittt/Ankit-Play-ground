@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Shopify local config
+.shopify/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional (future CI/CD use)
+assets/input.css
+package-lock.json
+package.json
