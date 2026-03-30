@@ -1,0 +1,86 @@
+<style>
+    .bannerImg img{
+      width:100%;
+      height:80vh;
+    }
+  @media(max-width:767px){
+    .bannerImg img{
+      height:auto;
+  }
+  }
+</style>
+<div class="main_banner  banner_slide">
+  {% for block in section.blocks %}
+    <div class="bannerImg">
+      <a href="{{ block.settings.url }}">
+      <img src="{{ block.settings.image | img_url: 'master' }}">
+      </a>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "Banner Image",
+  "settings": [],
+  	"blocks": [
+   {
+     "name": "Banner",
+     "type": "slide",
+     "settings": [
+       {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+       },
+       {
+         "type": "url",
+         "id": "url",
+         "label": "URL"
+       }
+     ]
+   }
+ ],
+  "presets": [
+  { "name": "Banner Image"}
+    ]
+}
+{% endschema %}
+
+<script>
+    $('.banner_slide').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+      arrows:false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+</script>

@@ -1,0 +1,65 @@
+<div class="page-width">
+  <h1>Wishlist</h1>
+  <div class="wishlist_item"></div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var wishlistContainer = document.querySelector('.wishlist_item');
+    
+    {% for product in collections.all.products %}
+    var getItem = localStorage.getItem("wishlist-{{ product.id }}");
+    if(getItem == "{{ product.id }}") {
+      var wishlistItemHtml = `
+        <div class="wishlist-grid">
+          <span class="removeItem-{{product.id}} removeItem">Remove</span>
+          <a href="">
+            <img src="{{ product.featured_image | image_url: width: 280, height: 300 }}">
+          </a>
+          <h2>{{ product.title }}</h2>
+          <p>{{ product.price }}</p>
+      </div>`;
+      wishlistContainer.insertAdjacentHTML('beforeend', wishlistItemHtml);
+    }
+      var removeItem = document.querySelector('.removeItem-{{product.id}}');
+      console.log(removeItem,"removeItem");
+      if(removeItem){
+      removeItem.addEventListener("click", function(){
+        localStorage.removeItem("wishlist-{{ product.id }}");
+        this.closest('.wishlist-grid').remove();
+      })
+      }else{
+        console.log("not getting")
+      }
+    {% endfor %}
+  });
+</script>
+<style>
+       .wishlist_item{
+         display: flex;
+         flex-wrap: wrap;
+         width: 100%;
+         justify-content: space-between;
+       }
+       .wishlist-grid {
+         width: calc(25% - 15px);
+         position:relative;
+     }
+     span.removeItem{
+       background: red;
+       color: white;
+       padding: 4px 15px;
+       display: inline-block;
+       position: absolute;
+       right: 0;
+       opacity:0
+
+   }
+  .wishlist-grid a img {
+     max-width: 260px;
+     width: 260px;
+   }
+  .wishlist-grid:hover span.removeItem{
+    opacity:1;
+    cursor: pointer;
+  }
+</style>

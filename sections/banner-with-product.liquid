@@ -1,0 +1,62 @@
+{% schema %}
+{
+  "name": "Image Link Block",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image_link",
+      "name": "Image Link",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Link Block",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="image-link-block page-width">
+  <div class="banner-product">
+  {% for block in section.blocks %}
+    {% if block.type == 'image_link' and block.settings.image != blank  %}
+      <a href="{{ block.settings.product }}" class="block_img">
+        {{ block.settings.image | image_url: width: 550, height: 300 | image_tag: class: 'custom-class', loading: 'lazy' }}
+      </a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<style>
+  .banner-product{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  .block_img{
+    width: calc(50% - 5px);
+    display: block;
+  }
+  .block_img img{
+    width:100%;
+  }
+  @media(max-width: 768px){
+     .block_img{
+    width: 100%;
+    display: block;
+  }
+  }
+</style>

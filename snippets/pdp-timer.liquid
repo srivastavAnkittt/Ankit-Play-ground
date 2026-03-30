@@ -1,0 +1,238 @@
+  <div class="maincountDown">
+    <div class="main-timer">
+      <!-- <h2 class="timer-content">Flash Sales</h2>  -->
+       {% for variant in variant %}
+  {% if variant.inventory_quantity != nil %}
+    We have {{ variant.inventory_quantity }} in stock only.
+  {% endif %}
+{% endfor %}
+    <div id="countdown">
+      <div class="time_sec">
+        <p>{{ 'days' }}</p>
+        <div id="days"></div>
+      </div>
+      <div class="time_sec">
+        <p>{{ 'hours' }}</p>
+        <div class="timer-main"><span id="hours" class="timer_"></span> <span class="separator">:</span></div>
+      </div>
+      <div class="time_sec">
+        <p>{{ 'minutes' }}</p>
+        <div class="timer-main"><span id="minutes" class="timer_"></span> <span class="separator">:</span></div>
+      </div>
+      <div class="time_sec">
+        <p>{{ 'seconds' }}</p>
+        <div class="timer-main"><span id="seconds" class="timer_"></span> <span class="separator">:</span></div>
+      </div>
+    </div>
+    </div>
+  </div>
+<style>
+   .maincountDown.right-bottom{
+     position: absolute;
+      top: 75%;
+      left: 0;
+      width: 300px;
+   }
+  .maincountDown.left-bottom{
+    position: absolute;
+      top: 82%;
+      left: 63%;
+      width: 300px;
+  }
+  .maincountDown.left-top{
+   position: absolute;
+      top: 0;
+      left: 68%;
+      width: 300px;
+  }
+   .maincountDown.right-top{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+   }
+   .maincountDown.center{
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+   }
+    .time_sec p{
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      color: #014548;
+      text-transform:capitalize;
+      margin: 0;
+    }
+    #days, #hours,#minutes,#seconds{
+      text-align: center;
+      font-family: Familjen Grotesk;
+        font-size: 24px;
+      /* font-weight: 700; */
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      margin-right: 4px;
+    }
+      .time_sec {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      color: #014548;
+        position: relative;
+        align-items:center;
+  }
+  .main-timer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+    div#countdown {
+      display: flex;
+      gap: 7%;
+      align-items: center;
+      color: #000;
+      font-size: 20px;
+      width: 60%;
+      justify-content: end;
+    }
+    .text_timer h2 {
+      color: #ff706b;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .number, .separator {
+      display: flex;
+      align-items: center;
+    }
+    .separator{
+      color:green;
+      font-size:35px;
+      margin: 0px 13px 10px 10px;
+      display: none;
+    }
+    .timer-main{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  .time_sec:after {
+      content: ':';
+      position: absolute;
+      bottom: 12px;
+      right: -10px;
+      font-weight: 700;
+      color: #57A924;
+  }
+  .time_sec:last-child:after {
+      content: none;
+  }
+  .maincountDown {
+    background: #E3CCCD;
+    padding:10px 15px;
+    margin: 10px 0;
+  }
+   
+  .timer-content, div#countdown p{
+         font-weight:bold;
+       }
+  @media screen and (max-width: 1025px){
+    #days, #hours, #minutes, #seconds{
+      font-size: 24px;;
+    }
+    .time_sec p{
+      margin: 2px 0;
+    }
+  }
+     @media screen and (max-width: 768px){
+      .maincountDown.left-top {
+        left: 58%;
+      }
+       div#countdown {
+       width:40%;
+       }
+       .maincountDown.left-bottom{
+         top: 80%;
+         left: 60%;
+       }
+     }
+     @media screen and (max-width: 549px) {
+       .maincountDown.left-top{
+         left: 30%;
+       }
+      .maincountDown.right-bottom{
+        top: 87%;
+      }
+      .maincountDown.right-bottom {
+          top: 85%;
+      }
+       #days, #hours, #minutes, #seconds {
+        font-size: 18px;
+       }
+       .maincountDown.left-bottom{
+        top: 80%;
+        left: 24%;
+      }
+       .main-timer{
+         flex-direction: column;
+         align-items: center;
+        justify-content: center;
+         padding: 15px 85px;
+       }
+       .timer-content{
+         margin:0;
+         padding-bottom:10px;
+         font-weight:bold;
+       }
+      
+       .time_sec{
+         align-items:center;
+       }
+       div#countdown{
+         width:100%;
+       }
+    }
+     @media screen and (max-width: 320px) {
+     .maincountDown.left-bottom {
+          left: 18%;
+          top:78%;
+      }
+     }
+</style>
+
+<script>
+var daysElement = document.getElementById("days");
+var hoursElement = document.getElementById("hours");
+var minutesElement = document.getElementById("minutes");
+var secondsElement = document.getElementById("seconds");
+var targetDate = new Date("2024-12-05");
+targetDate.setHours(24, 0, 0, 0);
+var serverEndTime = targetDate.getTime(); // Convert to milliseconds
+
+var x = setInterval(function () {
+  var currentTime = new Date().getTime(); 
+  var remainingTime = Math.floor((serverEndTime - currentTime) / 1000);
+
+  if (remainingTime <= 0) {
+    clearInterval(x);
+    var popup = document.querySelector(".show_hide");
+    popup.classList.remove("hidden");
+    return;
+  }
+
+  var days = Math.floor(remainingTime / (24 * 60 * 60));
+  var hours = Math.floor((remainingTime % (24 * 60 * 60)) / (60 * 60));
+  var minutes = Math.floor((remainingTime % (60 * 60)) / 60);
+  var seconds = remainingTime % 60;
+
+  daysElement.innerHTML = days.toString().padStart(2, "0");
+  hoursElement.innerHTML = hours.toString().padStart(2, "0");
+  minutesElement.innerHTML = minutes.toString().padStart(2, "0");
+  secondsElement.innerHTML = seconds.toString().padStart(2, "0");
+}, 1000);
+</script>

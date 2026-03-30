@@ -1,0 +1,534 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1663228277f108ba6b": {
+      "type": "banner_block",
+      "blocks": {
+        "c40fb1d9-ea01-44ca-ae48-cc00ef43e0be": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/CurrySerum_DesktopBanner.webp",
+            "url": "shopify://collections/combos"
+          }
+        },
+        "7a37190e-80ea-401d-bab2-87a30bc60af9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BondRepair_DesktopBanner_revised.webp",
+            "url": "shopify://collections/tea-tree"
+          }
+        },
+        "60dd8902-ccd4-4639-bc44-d02092b36521": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/curry-range_DesktopBanner-min.jpg",
+            "url": "shopify://collections/conditioner"
+          }
+        }
+      },
+      "block_order": [
+        "c40fb1d9-ea01-44ca-ae48-cc00ef43e0be",
+        "7a37190e-80ea-401d-bab2-87a30bc60af9",
+        "60dd8902-ccd4-4639-bc44-d02092b36521"
+      ],
+      "settings": {}
+    },
+    "tab_change_fdYiKE": {
+      "type": "tab-change",
+      "blocks": {
+        "collection_CcMxBh": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection_list": [
+              "apple-cider",
+              "coconut",
+              "combos"
+            ],
+            "collection_list1": [
+              "conditioner",
+              "shampoo",
+              "tea-tree"
+            ],
+            "collection_list2": [
+              "tea-tree",
+              "shampoo",
+              "conditioner"
+            ],
+            "collection_list3": [
+              "apple-cider",
+              "coconut",
+              "combos"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "collection_CcMxBh"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "tab_collection_yjeqy8": {
+      "type": "tab-collection",
+      "blocks": {
+        "tab_collection_wy436c": {
+          "type": "tab-collection",
+          "settings": {
+            "collection-tab": "Shampoo",
+            "collection": "shampoo"
+          }
+        },
+        "tab_collection_fmi6M9": {
+          "type": "tab-collection",
+          "settings": {
+            "collection-tab": "Conditioner",
+            "collection": "conditioner"
+          }
+        },
+        "tab_collection_jWeycj": {
+          "type": "tab-collection",
+          "settings": {
+            "collection-tab": "Apple Cider",
+            "collection": "apple-cider"
+          }
+        },
+        "tab_collection_NJDcQa": {
+          "type": "tab-collection",
+          "settings": {
+            "collection-tab": "Tea Tree",
+            "collection": "tea-tree"
+          }
+        },
+        "tab_collection_zHBHbY": {
+          "type": "tab-collection",
+          "settings": {
+            "collection-tab": "Coconut",
+            "collection": "coconut"
+          }
+        }
+      },
+      "block_order": [
+        "tab_collection_wy436c",
+        "tab_collection_fmi6M9",
+        "tab_collection_jWeycj",
+        "tab_collection_NJDcQa",
+        "tab_collection_zHBHbY"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_fUQFTR": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_WTzWdj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "apple-cider"
+          }
+        },
+        "featured_collection_erb7tT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coconut"
+          }
+        },
+        "featured_collection_FjNVKa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "combos"
+          }
+        },
+        "featured_collection_tfpaKb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "conditioner"
+          }
+        },
+        "featured_collection_jggM6D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shampoo"
+          }
+        },
+        "featured_collection_nc8zjn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tea-tree"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_WTzWdj",
+        "featured_collection_erb7tT",
+        "featured_collection_FjNVKa",
+        "featured_collection_tfpaKb",
+        "featured_collection_jggM6D",
+        "featured_collection_nc8zjn"
+      ],
+      "settings": {
+        "title": "Shop By Collection",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner_with_product_c8atX4": {
+      "type": "banner-with-product",
+      "blocks": {
+        "image_link_YNfxyc": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/6_Lifestyle_03b9dda1-b0f9-4da3-9f02-2f029eb0bd1e.png",
+            "product": "shopify://collections/apple-cider"
+          }
+        },
+        "image_link_RPjrJX": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/6_Lifestyle.png",
+            "product": "shopify://collections/coconut"
+          }
+        },
+        "image_link_7xppfE": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/26222_S8-8901030861925.jpg",
+            "product": "shopify://collections/conditioner"
+          }
+        },
+        "image_link_xQXfbB": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/tea-tree-and-vetiver-shampoo-and-conditioner.webp",
+            "product": "shopify://collections/tea-tree"
+          }
+        }
+      },
+      "block_order": [
+        "image_link_YNfxyc",
+        "image_link_RPjrJX",
+        "image_link_7xppfE",
+        "image_link_xQXfbB"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "timer_QiryrR": {
+      "type": "timer",
+      "settings": {
+        "checkbox": true,
+        "day": "2024-11-30",
+        "hour": "6",
+        "minutes": "00",
+        "second": "00"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Flash Sales",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1721990088516af48a": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "newsletter_9DaYHx": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_ezr7xi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_TbiLiX": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Welcome! Enjoy 20% off your first order as our way of saying thank you for choosing us. Use code: <strong>\"first-order\"</strong> at checkout. Shop now!</p>"
+          }
+        },
+        "email_form_8dDk8q": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_ezr7xi",
+        "paragraph_TbiLiX",
+        "email_form_8dDk8q"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "1663228277f108ba6b",
+    "tab_change_fdYiKE",
+    "tab_collection_yjeqy8",
+    "collection_list_fUQFTR",
+    "banner_with_product_c8atX4",
+    "timer_QiryrR",
+    "image_banner",
+    "rich_text",
+    "featured_collection",
+    "collage",
+    "video",
+    "multicolumn",
+    "1721990088516af48a",
+    "newsletter_9DaYHx"
+  ]
+}
